@@ -64,6 +64,10 @@ header .icons span:last-child {
   text-align: center;
 }
 
+.calendar .weeks li {
+  font-weight: 500;
+}
+
 .calendar ul li {
   width: calc(100% / 7);
 }

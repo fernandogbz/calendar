@@ -44,6 +44,10 @@ header .icons span {
   background-color: #f2f2f2;
 }
 
+header .icons span:last-child {
+  margin-right: -10px;
+}
+
 .calendar ul {
   display: flex;
   list-style: none;

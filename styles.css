@@ -41,6 +41,9 @@ header .icons span {
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
+}
+
+header .icons span:hover {
   background-color: #f2f2f2;
 }
 

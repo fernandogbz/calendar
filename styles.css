@@ -82,6 +82,9 @@ header .icons span:last-child {
   color: #aaa;
 }
 
+.days li.active {
+  color: #fff;
+}
 .calendar ul li {
   position: relative;
   width: calc(100% / 7);

@@ -68,6 +68,10 @@ header .icons span:last-child {
   font-weight: 500;
 }
 
+.calendar .days {
+  margin-bottom: 20px;
+}
+
 .calendar ul li {
   width: calc(100% / 7);
 }

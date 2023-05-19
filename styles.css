@@ -33,6 +33,17 @@ header .current-date {
   font-weight: 500;
 }
 
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
 .calendar ul {
   display: flex;
   list-style: none;

@@ -36,6 +36,8 @@ header .current-date {
 header .icons span {
   height: 38px;
   width: 38px;
+  color: #878787;
+  font-size: 1.9rem;
   margin: 0 1px;
   cursor: pointer;
   text-align: center;
@@ -55,4 +57,9 @@ header .icons span:last-child {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+.calendar ul li {
+  width: calc(100% / 7);
 }

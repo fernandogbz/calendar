@@ -19,3 +19,9 @@ body {
   width: 450px;
   background-color: #fff;
 }
+
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}

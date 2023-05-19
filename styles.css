@@ -28,6 +28,11 @@ body {
   justify-content: space-between;
 }
 
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
 .calendar ul {
   display: flex;
   list-style: none;

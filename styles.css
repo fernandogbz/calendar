@@ -91,5 +91,8 @@ header .icons span:last-child {
   left: 50%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+}
+
+.days li:hover::before {
   background-color: #f2f2f2;
 }

@@ -1,5 +1,6 @@
 // Getting variables
-const currentDate = document.querySelector(".current-date");
+const currentDate = document.querySelector(".current-date"),
+daysTag = document.querySelector(".days");
 
 // getting new date, current year and month
 let date = new Date(),

@@ -23,3 +23,7 @@ const renderCalendar = () => {
 }
 
 renderCalendar();
+
+previousNextIcon.forEach(icon => {
+  
+});

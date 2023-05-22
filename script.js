@@ -25,5 +25,7 @@ const renderCalendar = () => {
 renderCalendar();
 
 previousNextIcon.forEach(icon => {
-  
+  icon.addEventListener("click", () => { // adding click event on both icons
+    console.log(icon);
+  })
 });

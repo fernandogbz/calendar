@@ -9,7 +9,7 @@ currentMonth = date.getMonth(); // getMonth() returns the month (0 to 11 of a da
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const renderCalendar = () => {
-  currentDate.innerText = `${currentMonth} ${currentYear}`
+  currentDate.innerText = `${months[currentMonth]} ${currentYear}`
 }
 
 renderCalendar();

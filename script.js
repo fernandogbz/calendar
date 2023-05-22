@@ -5,3 +5,9 @@ const currentDate = document.querySelector(".current-date");
 let date = new Date(),
 currentYear = date.getFullYear(),
 currentMonth = date.getMonth();
+
+const renderCalendar = () => {
+
+}
+
+renderCalendar();

@@ -10,7 +10,11 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 
 const renderCalendar = () => {
   let lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate(); // getting last date of the month
-  console.log(lastDateOfMonth);
+  
+  for (let i = 1; i <= lastDateOfMonth; i++) {
+    console.log(i);
+  }
+
   currentDate.innerText = `${months[currentMonth]} ${currentYear}`
 }
 

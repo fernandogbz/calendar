@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: #fff;
 }
 
 body {
@@ -12,13 +13,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background:linear-gradient(#f3f3fb 10%, #377dff);
+  background:linear-gradient(#181a1b 10%, #377dff);
 }
 
 .wrapper {
   width: 450px;
   margin: 1em;
-  background-color: #fff;
+  background-color: #181a1b;
   border-radius: 10px;
 }
 

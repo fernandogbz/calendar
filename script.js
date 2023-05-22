@@ -1,6 +1,7 @@
 // Getting variables
 const currentDate = document.querySelector(".current-date"),
-daysTag = document.querySelector(".days");
+daysTag = document.querySelector(".days"),
+previousNextIcon = document.querySelectorAll(".icons span");
 
 // getting new date, current year and month
 let date = new Date(),

@@ -15,8 +15,12 @@ const renderCalendar = () => {
   lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate(); // getting last date of the month
   let liTag = "";
 
+  for (let i = firstDayOfMonth; i > 0; i--) { // Second parameter is lastDayOfMonth
+    liTag += `<li>${i}</li>`;
+  }
+
   for (let i = 1; i <= lastDateOfMonth; i++) {
-    liTag += `<li>${i}</li>`
+    liTag += `<li>${i}</li>`;
   }
 
   currentDate.innerText = `${months[currentMonth]} ${currentYear}`;

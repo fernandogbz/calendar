@@ -11,7 +11,8 @@ currentMonth = date.getMonth(); // getMonth() returns the month (0 to 11 of a da
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const renderCalendar = () => {
-  let lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate(); // getting last date of the month
+  let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay(), // getting first day of the month. getDay() returns the day of the week (0 to 6) of a date
+  lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate(); // getting last date of the month
   let liTag = "";
 
   for (let i = 1; i <= lastDateOfMonth; i++) {
@@ -31,3 +32,5 @@ previousNextIcon.forEach(icon => {
     renderCalendar();
   })
 });
+
+//Previous months last dates

@@ -13,6 +13,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const renderCalendar = () => {
   let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay(), // getting first day of the month. getDay() returns the day of the week (0 to 6) of a date
   lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate(), // getting last date of the month
+  lastDayOfMonth = new Date(currentYear, currentMonth, lastDateOfMonth).getDay(), // getting last day of the month
   lastDateOfLastMonth = new Date(currentYear, currentMonth, 0).getDate(); // getting last date of previous month
   let liTag = "";
   

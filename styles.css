@@ -82,7 +82,7 @@ header .icons span:last-child {
 }
 
 .days li.inactive {
-  color: #aaa;
+  color: #d4d4d474;
 }
 
 .days li.active {

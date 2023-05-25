@@ -18,13 +18,14 @@ const renderCalendar = () => {
   let liTag = "";
   
       //Previous month last days
-  for (let i = firstDayOfMonth; i > 0; i--) { // Second parameter is lastDayOfMonth
+  for (let i = firstDayOfMonth; i > 0; i--) { // creating li of previous month last days. Second parameter is lastDayOfMonth
     liTag += `<li class="inactive">${lastDateOfLastMonth - i + 1}</li>`;
   }
   
   //Month days
-  for (let i = 1; i <= lastDateOfMonth; i++) {
-    liTag += `<li>${i}</li>`;
+  for (let i = 1; i <= lastDateOfMonth; i++) { // creating li of all days of current month
+    let isToday = i === date.getDate() && currentMonth === new Date().getMonth() && currentYear === new Date().getFullYear() ? "active" : "";// adding active class to li if the current day, month, and year matched
+    liTag += `<li class="${isToday}">${i}</li>`;
   }
   
   //Next month first dates

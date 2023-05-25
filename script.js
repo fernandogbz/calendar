@@ -48,6 +48,8 @@ previousNextIcon.forEach(icon => {
       date = new Date(currentYear, currentMonth); // creating a new date of current year & month and pass it as date value
       currentYear = date.getFullYear(); // updating current year with new date year
       currentMonth = date.getMonth(); // updating current month with new date month
+    } else { // else pass new Date as date value
+      date = new Date();
     }
     renderCalendar();
   })

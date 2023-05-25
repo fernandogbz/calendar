@@ -45,7 +45,8 @@ previousNextIcon.forEach(icon => {
     currentMonth = icon.id === "previous" ? currentMonth - 1 : currentMonth + 1;
 
     if(currentMonth < 0 || currentMonth > 11) { // if current month is less than 0 or greater than 11
-      date = new Date();
+      date = new Date(currentYear, currentMonth); // creating a new date of current year & month and pass it as date value
+      
     }
     renderCalendar();
   })

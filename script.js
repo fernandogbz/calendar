@@ -47,6 +47,7 @@ previousNextIcon.forEach(icon => {
     if(currentMonth < 0 || currentMonth > 11) { // if current month is less than 0 or greater than 11
       date = new Date(currentYear, currentMonth); // creating a new date of current year & month and pass it as date value
       currentYear = date.getFullYear(); // updating current year with new date year
+      currentMonth = date.getMonth(); // updating current month with new date month
     }
     renderCalendar();
   })

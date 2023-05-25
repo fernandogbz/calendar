@@ -16,13 +16,20 @@ const renderCalendar = () => {
   lastDateOfLastMonth = new Date(currentYear, currentMonth, 0).getDate(); // getting last date of previous month
   let liTag = "";
   
-  //Previous month last days
+      //Previous month last days
   for (let i = firstDayOfMonth; i > 0; i--) { // Second parameter is lastDayOfMonth
     liTag += `<li class="inactive">${lastDateOfLastMonth - i + 1}</li>`;
   }
 
+      //Month days
   for (let i = 1; i <= lastDateOfMonth; i++) {
     liTag += `<li>${i}</li>`;
+  }
+  
+      //Next month first dates
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    
   }
 
   currentDate.innerText = `${months[currentMonth]} ${currentYear}`;

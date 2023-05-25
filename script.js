@@ -43,6 +43,12 @@ previousNextIcon.forEach(icon => {
   icon.addEventListener("click", () => { // adding click event on both icons
     // if previous icon is clicked then decrease current month by 1, else increase it by 1 
     currentMonth = icon.id === "previous" ? currentMonth - 1 : currentMonth + 1;
+
+    if(currentMonth < 0 || currentMonth > 11) { // if current month is less than 0 or greater than 11
+      date = new Date();
+    }
     renderCalendar();
   })
 });
+
+// show the next year if the current year end
